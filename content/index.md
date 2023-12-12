@@ -3,6 +3,9 @@ title: "Algoritmi: indice"
 draft: false
 tags:
 ---
+Appunti di Algoritmi e Complessità 2023/2024.
+Questa pagina funge da indice.
+_(esiste solo perché quartz🪴 lo richiede)_
 - [[Alberi Binomiali]]
 - [[Analisi Ammortizzata]]
 - [[B-Tree]]
@@ -13,9 +16,6 @@ tags:
 - [[Union-Find]]
 - [[Kruskal's Algorithm]]
 - [[Mergeable Heaps]]
-- [[Metodo degli Accantonamenti]]
-- [[Metodo del Potenziale]]
-- [[Metodo dell'Aggregazione]]
 - [[Move To Front]]
 - [[Notazione di Knuth]]
 - [[Prim's Algorithm]]
