@@ -21,7 +21,7 @@ while not STACK_EMPTY(s) and k>0 do:
 
 $\text{Multipop}(S) \to O(min(|S|,k))$
 
-Analisi di una sequenza di $n$ operazioni su uno stack <mark style="background: #BBFABBA6;">inizialmente vuoto</mark>.
+Analisi di una sequenza di $n$ operazioni su uno stack <ins>inizialmente vuoto</ins>.
 - $|S| = \mathbf{O}(n)$
 - Costo di una singola operazione $= \mathbf{O}(n)$
 - Costo di $n$ operazioni $=n \mathbf{O}(n) = \mathbf{O}(\color{red}{n^{2}}\color{white})$

@@ -7,7 +7,9 @@ Appunti di Algoritmi e Complessità 2023/2024.
 
 Questa pagina funge da indice.
 
-_(esiste solo perché quartz🪴 lo richiede)_
+_<sub><sup><sub><sup>(esiste solo perché quartz🪴 lo richiede)</sub></sup></sub></sup>_
+
+Currently working on: [[Prima Itinere]]
 - [[Alberi Binomiali]]
 - [[Analisi Ammortizzata]]
 - [[B-Tree]]
@@ -22,4 +24,4 @@ _(esiste solo perché quartz🪴 lo richiede)_
 - [[Notazione di Knuth]]
 - [[Prim's Algorithm]]
 - [[Splay Tree]]
-- [[Stack Multipop]]- 
+- [[Stack Multipop]]
