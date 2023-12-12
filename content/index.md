@@ -4,7 +4,9 @@ draft: false
 tags:
 ---
 Appunti di Algoritmi e Complessità 2023/2024.
+
 Questa pagina funge da indice.
+
 _(esiste solo perché quartz🪴 lo richiede)_
 - [[Alberi Binomiali]]
 - [[Analisi Ammortizzata]]
