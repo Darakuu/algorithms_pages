@@ -3,7 +3,7 @@ title: "Algoritmi: indice"
 draft: false
 tags:
 ---
-Appunti di Algoritmi e Complessità 2023/2024.
+Appunti di Algoritmi e Complessità 2023/2024, by [Darakuu](https://github.com/Darakuu)
 
 Questa pagina funge da indice.
 

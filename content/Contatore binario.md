@@ -35,10 +35,8 @@ Anche in questo caso c'è un'analisi sovrabbondante.
 
 Supponiamo che esistano due operazioni:
 
-ciaoooo
-
-$Set \quad 0 \longrightarrow 1$
-$Reset \quad 1 \longrightarrow 0$
+$Set \quad 0 \longrightarrow 1$ </br>
+$Reset \quad 1 \longrightarrow 0$ </br>
 
 E che il contatore sia inizialmente nullo.
 
