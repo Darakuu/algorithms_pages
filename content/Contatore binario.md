@@ -84,7 +84,7 @@ Poniamo:
 $\hat{c}_{\text{set}}=2$ <br>
 $\hat{c}_{\text{Reset}}=0$ <br>
 
-Un'operazione di $\text{Increment}$ altro non è che $\text{Set}+\text{Reset}$, per cui: \ 
+Un'operazione di $\text{Increment}$ altro non è che $\text{Set}+\text{Reset}$, per cui: 
 
 $\hat{c}_{\text{increment}}\leq 2$  
 
