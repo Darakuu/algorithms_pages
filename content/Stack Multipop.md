@@ -89,6 +89,7 @@ $\hat{c}_{\text{push}}=2$ (1 unità per il costo reale, + 1 unità per il costo 
 $\hat{c}_{\text{pop}}=\hat{c}_{\text{multipop}}=0$ 
 
 In ogni istante avremo: $\displaystyle\sum^n_{i=1}\hat{c}^i-\displaystyle\sum^n_{i=1}c_{i}=|S|\geq 0$ dove |S| è il numero di elementi nello stack. 
+
 e quindi: $\displaystyle\sum^n_{i=1}\hat{c}^i\geq \sum^n_{i=1}c_{i}$ 
 
 Avendo assegnato 2 al costo ammortizzato dell'operazione $\text{Push}$, avremo: 
