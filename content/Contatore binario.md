@@ -69,11 +69,11 @@ $$ \Large
 $$
 
 Otteniamo:
-$T(n)=n+\left\lfloor {\dfrac{n}{2}} \right\rfloor+\dots+\left\lfloor {\dfrac{n}{2^{k-1}}} \right\rfloor=$ <br>
-Otteniamo una serie geometrica di ragione $\dfrac{1}{2}$ <br>
+$T(n)=n+\left\lfloor {\dfrac{n}{2}} \right\rfloor+\dots+\left\lfloor {\dfrac{n}{2^{k-1}}} \right\rfloor=$  
+Otteniamo una serie geometrica di ragione $\dfrac{1}{2}$  
 $= \displaystyle\sum^{k-1}_{i=0}\left\lfloor {\dfrac{n}{2^i}} \right\rfloor\leq \sum^{k-1}_{i=0}{\dfrac{n}{2^i}}<\sum^{\infty}_{i=0}\dfrac{n}{2^i}=2n$
 
-Abbiamo tolto il floor ponendo la serie senza floor maggiore o uguale a quella con il floor, e sostituito k-1 con $\infty$ per maggiorare. <br>
+Abbiamo tolto il floor ponendo la serie senza floor maggiore o uguale a quella con il floor, e sostituito k-1 con $\infty$ per maggiorare.  
 Otteniamo $T(n)<2n \implies \dfrac{T(n)}{n}<\dfrac{2\cancel{ n }}{\cancel{ n }}=2$
 
 
@@ -81,8 +81,10 @@ Otteniamo $T(n)<2n \implies \dfrac{T(n)}{n}<\dfrac{2\cancel{ n }}{\cancel{ n }}=
 
 Poniamo:
 
-$\hat{c}_{\text{set}}=2$ <br>
-$\hat{c}_{\text{Reset}}=0$ <br>
+$\hat{c}_{\text{set}}=2$  
+
+$\hat{c}_{\text{Reset}}=0$  
+
 
 Un'operazione di $\text{Increment}$ altro non è che $\text{Set}+\text{Reset}$, per cui: 
 

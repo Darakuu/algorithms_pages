@@ -81,10 +81,10 @@ $$
 ## Multipop con [[Metodo degli Accantonamenti|Accantonamenti]]
 
 Assegneremo un costo più alto all'operazione di $\text{Push}$.
-Poniamo: <br>
-$\hat{c}_{\text{push}}=2$ (1 unità per il costo reale, + 1 unità per il costo ammortizzato da noi assegnato); <br>
-$\hat{c}_{\text{pop}}=\hat{c}_{\text{multipop}}=0$ <br>
-In ogni istante avremo: $\displaystyle\sum^n_{i=1}\hat{c}^i-\displaystyle\sum^n_{i=1}c_{i}=|S|\geq 0$ dove |S| è il numero di elementi nello stack. <br>
+Poniamo:  
+$\hat{c}_{\text{push}}=2$ (1 unità per il costo reale, + 1 unità per il costo ammortizzato da noi assegnato);  
+$\hat{c}_{\text{pop}}=\hat{c}_{\text{multipop}}=0$  
+In ogni istante avremo: $\displaystyle\sum^n_{i=1}\hat{c}^i-\displaystyle\sum^n_{i=1}c_{i}=|S|\geq 0$ dove |S| è il numero di elementi nello stack.  
 e quindi: $\displaystyle\sum^n_{i=1}\hat{c}^i\geq \sum^n_{i=1}c_{i}$
 Avendo assegnato 2 al costo ammortizzato dell'operazione $\text{Push}$, avremo:
 
