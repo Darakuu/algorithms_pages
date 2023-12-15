@@ -27,9 +27,11 @@ Analisi di una sequenza di $n$ operazioni su uno stack <ins>inizialmente vuoto</
 - Costo di $n$ operazioni $=n \mathbf{O}(n) = \mathbf{O}(\color{red}{n^{2}}\color{white})$
 Questa è una sovrastimazione del costo effettivo che potremmo ottenere.
 
+>[!warning] Lo Stack è inizialmente vuoto a meno che non venga specificato altrimenti
+
 ## Multipop con [[Metodo dell'Aggregazione|Aggregazione]]
 
-Lo stack è inizialmente vuoto. Le operazioni di Pop e Push sono elementari, mentre MultiPop(S,k) è un'operazione composta (da più pop).
+Le operazioni di Pop e Push sono elementari, mentre MultiPop(S,k) è un'operazione composta (da più pop).
 Sia $op_{i}$ una qualsiasi operazione (pop, push, multipop):
 
 $\underbrace{ op_{1},op_{2},op_{3},\dots,op_{n-1},op_{n} }_{ \downarrow }$ $\quad \longleftarrow \quad${Pop, Push, Multipop}
@@ -73,8 +75,22 @@ $$\large
 \end{align}
 $$
 
+>[!example]- Esempio di sequenza peggiore
+>$(n-1)Push + (n-1)MultiPop$
+
 ## Multipop con [[Metodo degli Accantonamenti|Accantonamenti]]
 
-todo: this evening (test per commit con messaggio)
+Assegneremo un costo più alto all'operazione di $\text{Push}$.
+Poniamo: <br>
+$\hat{c}_{\text{push}}=2$ (1 unità per il costo reale, + 1 unità per il costo ammortizzato da noi assegnato); <br>
+$\hat{c}_{\text{pop}}=\hat{c}_{\text{multipop}}=0$ <br>
+In ogni istante avremo: $\displaystyle\sum^n_{i=1}\hat{c}^i-\displaystyle\sum^n_{i=1}c_{i}=|S|\geq 0$ dove |S| è il numero di elementi nello stack. <br>
+e quindi: $\displaystyle\sum^n_{i=1}\hat{c}^i\geq \sum^n_{i=1}c_{i}$
+Avendo assegnato 2 al costo ammortizzato dell'operazione $\text{Push}$, avremo:
+
+$\displaystyle\sum^n_{i=1}\hat{c}^i\geq \sum^n_{i=1}c_{i} = 2\times \text{\#Push}\leq 2n$
+
+>[!example]- Controesempio:
+>Se avessimo assegnato costi ammortizzati inversi, una sequenza di sole push senza mai eseguire pop avrebbe generato credito negativo.
 
 ## Multipop con [[Metodo del Potenziale|Potenziale]]
