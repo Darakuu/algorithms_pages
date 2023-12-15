@@ -1,3 +1,15 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+.callout{
+    &[data-callout="def"] {
+        --color: #A01E28;
+        --border: #A01E2844;
+        --bg: #A01E2810;
+      }
+
+    &[data-callout="application"] {
+    --color: #c1efc1;
+    --border: #c1efc144;
+    --bg: #c1efc120;
+  }
+}
