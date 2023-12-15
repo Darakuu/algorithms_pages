@@ -13,23 +13,21 @@ Questa pagina funge da indice.
 
 _<sub><sup><sub><sup>(esiste solo perché quartz🪴 lo richiede)</sub></sup></sub></sup>_
 
-Currently working on: [[Prima Itinere]]
+Currently working on: [[Prima Itinere]] 
 ## Prima Parte
-- [[Alberi Binomiali]]
-- [[Analisi Ammortizzata]]
-- [[B-Tree]]
-- [[Contatore binario]]
-- [[Funzione di Ackermann]]
-- [[Heap Binomiali]]
-- [[Heap di Fibonacci]]
-- [[Union-Find]]
-- [[Kruskal's Algorithm]]
-- [[Mergeable Heaps]]
-- [[Move To Front]]
+
+- [[Analisi Ammortizzata]]:
+	- [[Metodo dell'Aggregazione]]
+	- [[Metodo degli Accantonamenti]]
+	- [[Metodo del Potenziale]]
+- Strutture Dati:
+	- [[Splay Tree]]
+	- [[B-Tree]]
+	- [[Alberi Binomiali]]
+	- [[Mergeable Heaps]]
+	- [[Union-Find]]
 - [[Notazione di Knuth]]
-- [[Prim's Algorithm]]
-- [[Splay Tree]]
-- [[Stack Multipop]]
+- [[Funzione di Ackermann]]
 
 ## Seconda Parte
 - TBD

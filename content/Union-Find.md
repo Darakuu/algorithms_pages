@@ -3,5 +3,6 @@ tags:
   - Algoritmi
   - Algoritmi/PrimaProva
   - Algoritmi/StruttureDati
-draft: true
+draft: false
 ---
+# Strutture dati per insiemi disgiunti

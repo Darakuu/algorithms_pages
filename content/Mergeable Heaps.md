@@ -1,7 +1,8 @@
 ---
 tags:
   - Algoritmi/PrimaProva
-  - Algoritmi
+  - Algoritmi/StruttureDati
+  - Algoritmi/MergeableHeap
 ---
 
 [[Algoritmi/Heap Binomiali|Heap Binomiali]]
