@@ -73,7 +73,7 @@ $T(n)=n+\left\lfloor {\dfrac{n}{2}} \right\rfloor+\dots+\left\lfloor {\dfrac{n}{
 Otteniamo una serie geometrica di ragione $\dfrac{1}{2}$ <br>
 $= \displaystyle\sum^{k-1}_{i=0}\left\lfloor {\dfrac{n}{2^i}} \right\rfloor\leq \sum^{k-1}_{i=0}{\dfrac{n}{2^i}}<\sum^{\infty}_{i=0}\dfrac{n}{2^i}=2n$
 
-Abbiamo tolto il floor ponendo la serie senza floor maggiore o uguale a quella con il floor, e sostituito k-1 con $\infty$ per maggiorare.
+Abbiamo tolto il floor ponendo la serie senza floor maggiore o uguale a quella con il floor, e sostituito k-1 con $\infty$ per maggiorare. <br>
 Otteniamo $T(n)<2n \implies \dfrac{T(n)}{n}<\dfrac{2\cancel{ n }}{\cancel{ n }}=2$
 
 
@@ -86,11 +86,13 @@ $\hat{c}_{\text{Reset}}=0$ <br>
 
 Un'operazione di $\text{Increment}$ altro non è che $\text{Set}+\text{Reset}$, per cui: \ 
 
-$\hat{c}_{\text{increment}}\leq 2$ \ 
+$\hat{c}_{\text{increment}}\leq 2$  
 
-$\displaystyle\sum^n_{i=i}\hat{c}_{i}-\sum^n_{i=1}c_{i}=\text{\#bit sul contatore uguali ad } 1 \geq 0$ , La differenza è non negativa per ogni istante di esecuzione. \ 
 
-Per cui vale: $\displaystyle\sum^n_{i=i}\hat{c}_{i}\geq\sum^n_{i=1}c_{i}$ , e riotteniamo lo stesso risultato del metodo dell'aggregazione: $2n\geq\displaystyle\sum^n_{i=i}\hat{c}_{i}\geq\sum^n_{i=1}c_{i}$ \ 
+$\displaystyle\sum^n_{i=i}\hat{c}_{i}-\sum^n_{i=1}c_{i}=\text{\#bit sul contatore uguali ad } 1 \geq 0$ , La differenza è non negativa per ogni istante di esecuzione. 
+
+Per cui vale: $\displaystyle\sum^n_{i=i}\hat{c}_{i}\geq\sum^n_{i=1}c_{i}$ , e riotteniamo lo stesso risultato del metodo dell'aggregazione: $2n\geq\displaystyle\sum^n_{i=i}\hat{c}_{i}\geq\sum^n_{i=1}c_{i}$ 
+
 
 Ossia $n$ incrementi in tempo $2n$, indipendentemente da $k$  (il numero di bit)
 
