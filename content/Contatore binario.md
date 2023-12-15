@@ -100,3 +100,13 @@ Ossia $n$ incrementi in tempo $2n$, indipendentemente da $k$  (il numero di bit)
 
 
 ## Contatore Binario con [[Metodo del Potenziale|Potenziale]]
+
+Sia $\Phi(D_{i})=\text{\#Bit Uguali ad }1$, e $\phi(D_{0})=0$.  
+
+Stiamo rispettando la disuguaglianza $\phi (D_{i})>\phi(D_{o})$. 
+
+
+
+### Contatore binario con incremento inizialmente <ins>non nullo</ins>
+
+Poniamo come prima todo

@@ -42,6 +42,8 @@ Altrimenti, accade il viceversa. 
 >
 >**Nota Bene:** anche se vale questo lemma, non ci è garantito un buon tempo di esecuzione.
 
+La difficoltà sta nell'inventare o trovare una funzione potenziale adatta, ma poi il resto dei calcoli risulta semplificato rispetto agli altri due metodi trattati.
+
 >[!example] Esempi:
 >- [[Stack Multipop#Multipop con Metodo del Potenziale Potenziale|Stack Multipop]]
 >- [[Contatore binario]]

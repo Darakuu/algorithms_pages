@@ -101,6 +101,20 @@ $\displaystyle\sum^n_{i=1}\hat{c}_{i}\geq \sum^n_{i=1}c_{i} = 2\times \text{\#Pu
 
 ## Multipop con [[Metodo del Potenziale|Potenziale]]
 
-Poniamo $\phi(S)=_{def}\mid S\mid$, con $S_{0}$ lo Stack vuoto.
+Poniamo $\phi(S)=_{def}\mid S\mid$, con $S_{0}$ lo Stack vuoto. Poniamo, come da teoria, $\phi(S_{o}=0)$, quindi siamo sicuri che $\phi(S)\geq \phi(S_{0})$. 
 
-to be continued
+
+>[!tip] Vogliamo trovare valori costanti nei costi ammortizzati.
+ 
+
+- $\hat{c}_{pop}=c_{pop}+\phi(S_{i})-\phi(S_{i-1})=1+\mid S_{i}\mid-\mid S_{i-1}\mid\ = \ \boxed{\color{lightgreen}0}$ 
+	- in quanto: $|S_{i}|=|S_{i-1}|-1$
+- $\hat{c}_{\text{multipop}}=c_{\text{multipop}}+\phi(|S_{i}|)-\phi(|S_{i-1}|) = k + |S_{i}|-|S_{i-1}| = \boxed{\color{lightgreen}0}$
+	- in quanto $|S_{i}|=|S_{i-1}|-k$
+- $\hat{c}_{\text{push} }=c_{\text{push}}+|S_{i}|-|S_{i-1}|=1+1=\boxed{\color{lightgreen}2}$
+	- in quanto: $|S_{i}|=|S_{i-1}|+1$
+ 
+Abbiamo trovato gli stessi valori degli altri metodi: $2\times\#\text{push} = 2n$. 
+
+Questa è una manifestazione della Proprietà di Confluenza: i crediti non dipendono dalla sequenza, ma dalla struttura dati.
+
