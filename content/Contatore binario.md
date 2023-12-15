@@ -74,8 +74,8 @@ Otteniamo una serie geometrica di ragione $\dfrac{1}{2}$  
 $= \displaystyle\sum^{k-1}_{i=0}\left\lfloor {\dfrac{n}{2^i}} \right\rfloor\leq \sum^{k-1}_{i=0}{\dfrac{n}{2^i}}<\sum^{\infty}_{i=0}\dfrac{n}{2^i}=2n$
 
 Abbiamo tolto il floor ponendo la serie senza floor maggiore o uguale a quella con il floor, e sostituito k-1 con $\infty$ per maggiorare.  
-Otteniamo $T(n)<2n \implies \dfrac{T(n)}{n}<\dfrac{2\cancel{ n }}{\cancel{ n }}=2$
-
+Otteniamo $T(n)<2n \implies \dfrac{T(n)}{n}<\dfrac{2\cancel{ n }}{\cancel{ n }}=2$ 
+<br>
 
 ## Contatore Binario con [[Metodo degli Accantonamenti|Accantonamenti]]
 
@@ -96,9 +96,7 @@ $\displaystyle\sum^n_{i=i}\hat{c}_{i}-\sum^n_{i=1}c_{i}=\text{\#bit sul contator
 Per cui vale: $\displaystyle\sum^n_{i=i}\hat{c}_{i}\geq\sum^n_{i=1}c_{i}$ , e riotteniamo lo stesso risultato del metodo dell'aggregazione: $2n\geq\displaystyle\sum^n_{i=i}\hat{c}_{i}\geq\sum^n_{i=1}c_{i}$ 
 
 
-Ossia $n$ incrementi in tempo $2n$, indipendentemente da $k$  (il numero di bit)
-
-
+Ossia $n$ incrementi in tempo $2n$, indipendentemente da $k$  (il numero di bit) 
 
 
 ## Contatore Binario con [[Metodo del Potenziale|Potenziale]]

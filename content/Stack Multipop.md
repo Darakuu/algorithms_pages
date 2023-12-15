@@ -88,15 +88,19 @@ $\hat{c}_{\text{push}}=2$ (1 unità per il costo reale, + 1 unità per il costo 
 
 $\hat{c}_{\text{pop}}=\hat{c}_{\text{multipop}}=0$ 
 
-In ogni istante avremo: $\displaystyle\sum^n_{i=1}\hat{c}^i-\displaystyle\sum^n_{i=1}c_{i}=|S|\geq 0$ dove |S| è il numero di elementi nello stack. 
+In ogni istante avremo: $\displaystyle\sum^n_{i=1}\hat{c}_{i}-\displaystyle\sum^n_{i=1}c_{i}=|S|\geq 0$ dove |S| è il numero di elementi nello stack. 
 
-e quindi: $\displaystyle\sum^n_{i=1}\hat{c}^i\geq \sum^n_{i=1}c_{i}$ 
+e quindi: $\displaystyle\sum^n_{i=1}\hat{c}_{i}\geq \sum^n_{i=1}c_{i}$ 
 
 Avendo assegnato 2 al costo ammortizzato dell'operazione $\text{Push}$, avremo: 
 
-$\displaystyle\sum^n_{i=1}\hat{c}^i\geq \sum^n_{i=1}c_{i} = 2\times \text{\#Push}\leq 2n$
+$\displaystyle\sum^n_{i=1}\hat{c}_{i}\geq \sum^n_{i=1}c_{i} = 2\times \text{\#Push}\leq 2n$
 
 >[!example]- Controesempio:
 >Se avessimo assegnato costi ammortizzati inversi, una sequenza di sole push senza mai eseguire pop avrebbe generato credito negativo.
 
 ## Multipop con [[Metodo del Potenziale|Potenziale]]
+
+Poniamo $\phi(S)=_{def}\mid S\mid$, con $S_{0}$ lo Stack vuoto.
+
+to be continued

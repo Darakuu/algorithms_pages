@@ -32,5 +32,5 @@ A questo punto, viene raggiunto l'obiettivo prefissato pocanzi. 
 
 >[!example] Esempi:
 >- [[Stack Multipop#Multipop con Metodo degli Accantonamenti Accantonamenti|Stack Multipop]]
->- [[Contatore binario#Contatore Binario con Metodo degli Accantonamenti Accantonamenti|Contatore Binario]]
+>- [[Contatore binario]]
 
