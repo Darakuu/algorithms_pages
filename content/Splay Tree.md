@@ -28,14 +28,24 @@ Siano i nodi:
 - $g$, nonno;
 - $p$, padre o parent;
 - $x$, nodo su cui stiamo effettuando l'operazione.
+ 
+
+Stiamo effettuando l'operazione Splay su $x$ in tutti i seguenti esempi:
 ## Zig-Zag
 
-![[ZigZag.excalidraw]]
+![[ZigZag.excalidraw.svg]]
+
+
+
+Ogni nodo si sposta una posizione a destra seguita da una posizione a sinistra dalla posizione corrente.
 ## Zig-Zig
 
-![[ZigZig.excalidraw]]
+![[ZigZig.excalidraw.svg]]
 
+
+Altro non è che una doppia operazione zig, definita sotto. Ogni nodo si muove due posizioni a destra dalla sua posizione attuale.
 ## Zig
-Nello Zig il nodo $x$ è sprovvisto di nonno
+Nello Zig il nodo $x$ è sprovvisto di nonno. 
+Ogni nodo si muove una posizione a destra dalla sua attuale posizione.
 
-![[Zig.excalidraw]]
+![[Zig.excalidraw.svg]]
