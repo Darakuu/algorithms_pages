@@ -112,21 +112,28 @@ Pertanto, possiamo utlizzare il potenziale $\Phi(T)$ per calcolare un upper boun
 >Siano $a,b \in \mathbb{N^+}$, e sia $c \geq a+b$ 
 >
 >Allora: $\log a+\log b \leq 2\log c -2$
->
-><ins>Dimostrazione</ins>
->Si osservi:
->$$\begin{align}
->(a+b)^2&=a^2+2ab+b^2 \\
-> & = a^2-2ab+b^2+4ab \\
-> & = (a-b)^2+4ab \\
-> & \geq 4ab \\
->a+b & \geq 2\sqrt{ ab }
->\end{align} $$
->Considerando $c$
->$c\geq a+b\geq 2\sqrt{ ab }$
->Prendendo i logaritmi di ambo i membri:
->$\log c \geq 1+\dfrac{1}{2}(\log a+\log b)$
->$2\log c-2\geq \log a+\log b$
+
+
+<ins>Dimostrazione</ins>
+Si osservi:
+$$
+\begin{align}
+(a+b)^2 & =a^2+2ab+b^2 \\
+ & = a^2-2ab+b^2+4ab \\
+ & = (a-b)^2+4ab \\
+ & \geq 4ab \\
+a+b & \geq 2\sqrt{ ab }
+\end{align} 
+$$
+Considerando $c$ 
+
+$c\geq a+b\geq 2\sqrt{ ab }$ 
+
+Prendendo i logaritmi di ambo i membri: 
+
+$\log c \geq 1+\dfrac{1}{2}(\log a+\log b)$ 
+
+$2\log c-2\geq \log a+\log b\  \blacksquare$
 
  
 
