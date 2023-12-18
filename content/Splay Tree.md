@@ -160,43 +160,77 @@ Costo Reale=2 
 
 $\Delta \phi=R_{f}(x,p,g)-R_{i}(x,p,g)$ 
 
-Si osservi che: $S_{f}(x) = S_{i}(g) \to R_{f}(x) =R_{i}(g)$, e quindi $\to \Delta \phi \leq R_{f}(x,g)-R_{i}(x,p)$ 
+Si osservi che: 
+
+$S_{f}(x) = S_{i}(g) \ \longrightarrow R_{f}(x) =R_{i}(g)$,  
+ $\qquad\qquad\qquad\longrightarrow \Delta \phi = R_{f}(p,g)-R_{i}(x,p)$  
+
+E quindi: 
+
+$S_f(p) \leq S_f(x) \longrightarrow R_{f}(p)\leq R_{f}(x)$
+ 
+Perciò siamo sicuri che:
+
+$\Delta \Phi \leq R_{f}(x,g) - R_{i}(x,p)$
+
 
 $S_{i}(x)+S_{f}(g)\leq S_{f}(x) \overset{ lemma }{ \longrightarrow }R_{i}(x)+R_{f}(g)\leq 2R_{f}(x)-2$
 $$
 \begin{align}
-\longrightarrow\Delta \Phi & \leq R_{f}(x,g)-R_{i}(x,p)+R_{i}(x)-R_{i}(x) \\
+\longrightarrow \textcolor{red}{\Delta \Phi} & \leq R_{f}(x,g)-R_{i}(x,p)+R_{i}(x)-R_{i}(x) \\
 & = R_{f}(x) \textcolor{lightgreen}{+R_{f}(g)} \textcolor{lightblue}{-R_{i}(x)}-R_{i}(p)\textcolor{lightgreen}{+R_{i}(x)} \textcolor{lightblue}{-R_{i}(x)} \\
 & \leq R_{f}(x) +{\underset{ \text{somma maggiorata} }{\textcolor{lightgreen} {2R_{f}(x)-2} }}\textcolor{lightblue}{-2R_{i}(x)}-R_{i}(p) \\
 & = 3R_{f}(x)-2-2R_{i}(x)-R_{i}(p) \\
 & \leq 3R_{f}(x) -2 -\underbrace{ 2R_{i}(x)-R_{i}(x) }_{  } \\
 & \leq 3R_{f}(x) - 2 -3R_{i}(x)  \\
-& = 3(R_{f}(x)-R_{i}(x))-2 \\
-\text{Da cui segue} \\
-& -R_{i}(p) \leq -R_{i}(x) \\
-\text{Cons. i nodi:} \\
-S_{i}(x)\leq S_{i}(p) & \to R_{i}(x)\leq R_{i}(p) \\ \\
+& = 3(R_{f}(x)-R_{i}(x))-2 \\ \\
 
-\Delta \Phi & \leq 3(R_{f}(x)- R_{i}(x)) -2 \\
+\text{Da cui segue} \\ \\
+
+& -R_{i}(p) \leq -R_{i}(x) \\ \\
+
+\text{Cons. i nodi:} \\ \\
+
+& S_{i}(x)\leq S_{i}(p) \to R_{i}(x)\leq R_{i}(p) \\ \\
+
+\textcolor{red}{\Delta \Phi} & \leq 3(R_{f}(x)- R_{i}(x)) -2 \\
  \\
  \\
 &\Large\boxed{\hat{c}_{\text{zig-zig}}=2+\Delta \Phi \leq 3(R_{f}(x)-R_{i}(x))}
 \end{align}
 $$
  
->[!example] Grafico
->
-
 ## Caso Zig-Zag
-$$
-todo
-$$
->[!example] Grafico
->
+ 
+Costo Reale=2
+$\Delta \Phi=R_{f}(x,p,g)-R_{i}(x,p,g)$ 
+
+Si osservi che: 
+
+$S_{f}(x) = S_{i}(g) \ \longrightarrow R_{f}(x) =R_{i}(g)$,  
+ $\qquad\qquad\qquad\longrightarrow \Delta \phi = R_{f}(p,g)-R_{i}(x,p)$ 
+
+E quindi:
+
+
+$S_{i}(x) \leq S_{i}(p) \ \longrightarrow R_{i}(x) =R_{i}(p)$,  
+ $\qquad\qquad\qquad\longrightarrow \Delta \phi = R_{f}(p,g)-2\cdot R_{i}(x)$
+
+#todo La dimostrazione è simile a prima, non c'è tempo di trascriverla correttamente al momento.
+
+$\Large\boxed{\hat{c}_{zig-zag}=2+\Delta \Phi \leq 3(R_{f}(x)-R_{i}(x))}$
+
 ## Caso Zig
 
-$$
-todo
-$$
->[!example] Grafico
->
+Costo Reale=1 
+
+$\Delta \Phi=R_{f}(x,p)-R_{i}(x,p) \longrightarrow\dots\longrightarrow \Delta \Phi \leq 3(R_{f}(x)-R_{i}(x))$ 
+
+$\Large\boxed{\hat{c}_{zig}=1+\Delta \Phi \leq 3(R_{f}(x)-R_{i}(x))}$
+ 
+
+>[!def] Costo Ammortizzato Splay (senza dim, no time):
+>$\hat{c}_{splay}(x)\leq3R(root(T))+1\leq 3\log N+1$
+
+
+Gli Splay Tree possono anche essere definiti [[Splay Tree Top-Down|top-down]].
