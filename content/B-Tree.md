@@ -39,16 +39,16 @@ Ciò consente ai B-Tree di avere un'altezza più bassa rispetto ad altri tipi di
 
 $\Large n_{h}\leq n\leq N_{h}$
 
-| livello | \#nodi   | \#chiavi                               |
+| livello | \# nodi   | \# chiavi                               |
 |:-------:|:--------:|:--------------------------------------:|
 |       0 |        1 |                                      1 |
 |       1 |        2 | $2(t-1)$                               |
 |       2 | $2t$     | $2t(t-1)$                              |
 |       3 | $2t^2$   | $2t^2(t-1)$                            |
 | ...     | ...      | ...                                    |
-| i       | 2t^{i-1} | $2t^{i-1}(t-1)$                        |
+| i       | $2t^{i-1}$ | $2t^{i-1}(t-1)$                        |
 | ...     | ...      | ...                                    |
-| h       | 2t^{h-1} | $\underbrace{ 2t^{h-1}(t-1) }_{n_{h}}$ |  
+| h       | $2t^{h-1}$ | $\underbrace{ 2t^{h-1}(t-1) }_{n_{h}}$ |  
 
 
 ![[Pasted image 20231219004511.png|768]]
@@ -86,14 +86,14 @@ $$
 
 ![[Pasted image 20231219005231.png|768]]
 
-| livello | \#nodi   | \#chiavi                               |
+| livello | \# nodi   | \# chiavi                               |
 |:-------:|:--------:|:--------------------------------------:|
 |       0 |        1 |                                      2t-1 |
 |       1 |        2t | $2t(2t-1)$                               |
 |       2 | $(2t^2)$     | $2t^2(2t-1)$                              |
 |       3 | $(2t^3)$   | $2t^3(2t-1)$                            |
 | ...     | ...      | ...                                    |
-| h       | (2t)^{h} | $\underbrace{ 2t^{h}(2t-1) }_{N_{h}}$ |  
+| h       | $(2t)^{h}$ | $\underbrace{ (2t)^{h}(2t-1) }_{N_{h}}$ |  
 
 
 Si procede come prima. 
@@ -194,14 +194,10 @@ Schematizziamo la procedura:
 > 	   ![[Pasted image 20231219014429.png|512]]
 > 	- Altrimenti, se $c_{i}[x]$ non è magro, si proceda ricorsivamente a cancellare la chiave k a partire dal nodo $c_{i}[x]$ 
 
->[!example]- Esempio Cancellazione
->- Delete(F) Caso 1
->![[Pasted image 20231219014705.png|512]]
->- Delete(M) Caso 2.1
->![[Pasted image 20231219014920.png|512]]
->- Delete(G) Caso 2.3
->![[Pasted image 20231219015008.png|512]]
->- Delete(D) Caso 3.2
->![[Pasted image 20231219020105.png|512]]
->- Delete(B) Caso 3.1
->![[Pasted image 20231219020138.png|512]]
+
+
+
+
+
+
+
