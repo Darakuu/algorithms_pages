@@ -45,7 +45,7 @@ sempre quello mbare
 # Heap di Fibonacci
 
 - Indicare operazioni supportate, e la loro complessità.
-- Sia $x$ un nodo di grado $k$ in un heap di Fibonacci e siano $y_{1},\dots,y_{k}$ i figli di $x$ nell'ordine in cui sono stati innestati in $x$. Quale limitazione inferiore è possibile dare per il grado degree$(y_{i})$. Perché? [[Heap di Fibonacci#Stima di D(n)]]
+- Sia $x$ un nodo di grado $k$ in un heap di Fibonacci e siano $y_{1},\dots,y_{k}$ i figli di $x$ nell'ordine in cui sono stati innestati in $x$. Quale limitazione inferiore è possibile dare per il grado degree$(y_{i})$. Perché? [[Heap di Fibonacci#Lemma 3|Lemma 3]]
 - Fornire (e dimostrare) una minorazione dei gradi dei figli di ciascun nodo (**LEMMA**)
 - Stabilire se esistono heap di Fibonacci dati nel compito
 
