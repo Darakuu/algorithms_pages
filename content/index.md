@@ -15,7 +15,15 @@ _<sub><sup><sub><sup>(esiste solo perché quartz🪴 lo richiede)</sub></sup></s
 
 Currently working on: [[Prima Itinere]]  
 
-Missing right now: Heap Binomiali, Heap di Fibonacci
+Missing right now: Heap Binomiali, Heap di Fibonacci 
+ 
+Nel caso in cui steste vedendo questo sito ora (19/12/2023->onwards), molte cose sono fatte di fretta perché ci sono le prove in itinere. 
+
+Idealmente, vorrei:
+- Fare io tutti gli esempi e i grafici/immagini;
+- Sistemare alcune dimostrazioni o parti lacunose;
+- Aggiungere risoluzioni di esercizi scritte bene bene in Latex.
+- Infine (ma questo è utopico), aggiungere con citazioni stralci dal Cormen.
 ## Prima Parte
 
 - [[Analisi Ammortizzata]]:
