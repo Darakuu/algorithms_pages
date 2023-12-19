@@ -13,9 +13,7 @@ Questa pagina funge da indice.
 
 _<sub><sup><sub><sup>(esiste solo perché quartz🪴 lo richiede)</sub></sup></sub></sup>_
 
-Currently working on: [[Prima Itinere]]  
-
-Missing right now: Heap Binomiali, Heap di Fibonacci 
+Currently working on: [[Prima Itinere]]. Al momento c'è il minimo necessario per passare l'esame.  
  
 Nel caso in cui steste vedendo questo sito ora (19/12/2023->onwards), molte cose sono fatte di fretta perché ci sono le prove in itinere. 
 
