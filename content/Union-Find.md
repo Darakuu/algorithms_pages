@@ -29,7 +29,7 @@ Qual e la complessità di una sequenza di m operazioni di cui n sono Make Set?
 - Nel caso di alberi aventi lo stesso rango, gli alberi si innestano in maniera arbitraria e il rango dell'albero risultante sarà incrementato di un'unità.
 
 
-## Compressione die Cammini
+## Compressione dei Cammini
 - Tutti i nodi incontrati nell'esecuzione di una $\mathtt{FIND\_SET}$ vengono innestati nella radice.
 
 ## Effetto delle Euristiche sulla complessità

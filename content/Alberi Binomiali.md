@@ -34,7 +34,8 @@ Caso Base: $k=0$ 
 Passo Induttivo: Supponiamo che il Lemma sia vero per $k-1$, con $k\geq1$
 1. $B_{k}$ ha $\#(B_{k-1}+)+\#(B_{k-1})=2\cdot2^{k-1}=2^k$ nodi.
 2. L'altezza di $B_{k}$ è $(k-1)+1=k$
-3. Sia $1 \leq i \leq k-1$, il numero di nodi di $B_{k}$ a profondità $i$ è uguale a: 
+3. Sia $1 \leq i \leq k-1$, il numero di nodi di $B_{k}$ a profondità $i$ è uguale a:  
+
    $\displaystyle\binom{k-1}{i}+\binom{k-1}{i-1}=\binom{k}{i}$
    Inoltre, $B_{k}$ ha $\displaystyle\binom{k}{0}=1$ nodi a profondità 0, quindi avrà $\displaystyle\binom{k}{k}$ nodi a profondità $k$. 
 4. La radice di $B_{k}$ ha grado $degree{B_{k-1}}+1 = k
@@ -51,7 +52,8 @@ Sia $B$ un albero binomiale con $m$ nodi, allora ogni nodo in $B$ ha al più gra
 
 Per qualche $k \in \mathbb{N}$ si ha $B=B_{k}$. 
 
-Quindi $n=2^k$. 
+Quindi $n=2^k$.  
+
 Ogni nodo in $B_{k}$ ha grado $\leq k$. 
 
 Ma $k=\log n$, da cui la tesi $\quad \blacksquare$
