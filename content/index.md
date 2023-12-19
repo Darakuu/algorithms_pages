@@ -15,7 +15,7 @@ _<sub><sup><sub><sup>(esiste solo perché quartz🪴 lo richiede)</sub></sup></s
 
 Currently working on: [[Prima Itinere]]  
 
-Missing right now: Heap Binomiali, Heap di Fibonacci, Knuth-Ackermann, Union Find fatti bene.
+Missing right now: Heap Binomiali, Heap di Fibonacci
 ## Prima Parte
 
 - [[Analisi Ammortizzata]]:
@@ -28,8 +28,10 @@ Missing right now: Heap Binomiali, Heap di Fibonacci, Knuth-Ackermann, Union Fin
 	- [[Alberi Binomiali]]
 	- [[Mergeable Heaps]]
 	- [[Union-Find]]
-- [[Notazione di Knuth]]
-- [[Funzione di Ackermann]]
+- [[Notazione di Knuth]] -- Non implementata causa tempo
+- [[Funzione di Ackermann]] -- Non implementata causa tempo
+
+- [[Schema Esercizi Prima Prova]]
 
 ## Seconda Parte
 - TBD
