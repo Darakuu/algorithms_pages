@@ -67,11 +67,17 @@ Sia $x$ un nodo in un heap di fibonacci e sia $grado(x)=k$. 
 
 Siano $y_{1},y_{2},\dots,y_{k}$ i figli di $x$ nell'ordine in cui sono stati innestati in $x$. 
 
-Allora, $grado[y_{i}]\geq i-2,$ per $i=3,4,\dots,k$
+Allora, $\textcolor{red}{grado[y_{i}]\geq i-2},$ per $i=3,4,\dots,k$
 
 <ins>Dimostrazione</ins>
 
-...
+Sia $i\geq 3$; notiamo che quando $y_{i}$ è innestato in $x$, al tempo T, il nodo $x$ ha già $y_{1},\dots,y_{i-1}$. 
+
+Tra i suoi figli, per cui $grado_{T-1}[y_{i}]=grado_{T-1}[x]\geq i-1$. 
+
+Dall'istante T, $y_i$ può avere perduto al più un figlio, e quindi:
+
+$\textcolor{red}{grado[y_{i}]\geq i-2}$
 
 ## Altro Lemma
 
