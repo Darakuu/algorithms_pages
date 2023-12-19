@@ -46,8 +46,6 @@ Passo Induttivo: Supponiamo che il Lemma sia vero per $k-1$, con $k\geq1$
 
 Sia $B$ un albero binomiale con $m$ nodi, allora ogni nodo in $B$ ha al più grado $\log n$. 
 
-
-
 <ins>DImostrazione</ins> 
 
 Per qualche $k \in \mathbb{N}$ si ha $B=B_{k}$. 
