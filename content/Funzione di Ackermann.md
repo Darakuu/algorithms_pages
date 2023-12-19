@@ -1,6 +1,7 @@
 ---
 tags:
   - Algoritmi/PrimaProva
+draft: true
 ---
 # Funzione di Ackermann
 
