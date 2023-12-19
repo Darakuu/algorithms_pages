@@ -195,13 +195,13 @@ Schematizziamo la procedura:
 > 	- Altrimenti, se $c_{i}[x]$ non è magro, si proceda ricorsivamente a cancellare la chiave k a partire dal nodo $c_{i}[x]$ 
 
 >[!example]- Esempio Cancellazione
->Delete(F) Caso 1
+>- Delete(F) Caso 1
 >![[Pasted image 20231219014705.png|512]]
->Delete(M) Caso 2.1
+>- Delete(M) Caso 2.1
 >![[Pasted image 20231219014920.png|512]]
->Delete(G) Caso 2.3
+>- Delete(G) Caso 2.3
 >![[Pasted image 20231219015008.png|512]]
->Delete(D) Caso 3.2
+>- Delete(D) Caso 3.2
 >![[Pasted image 20231219020105.png|512]]
->Delete(B) Caso 3.1
+>- Delete(B) Caso 3.1
 >![[Pasted image 20231219020138.png|512]]
