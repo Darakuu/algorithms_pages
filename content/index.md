@@ -13,7 +13,9 @@ Questa pagina funge da indice.
 
 _<sub><sup><sub><sup>(esiste solo perché quartz🪴 lo richiede)</sub></sup></sub></sup>_
 
-Currently working on: [[Prima Itinere]] 
+Currently working on: [[Prima Itinere]]  
+
+Missing right now: Heap Binomiali, Heap di Fibonacci, Knuth-Ackermann, Union Find fatti bene.
 ## Prima Parte
 
 - [[Analisi Ammortizzata]]:
