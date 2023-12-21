@@ -15,7 +15,7 @@ sempre quello mbare
 
 - Si definisca la struttura dati BTree
 - (Completo) Si definisca in maniera precisa la struttura dati B-tree e se ne illustri sinteticamente un’applicazione.
-- Si determini il numero massimo e minimo di nodi che può essere contenuto in un B-Tree di alteza h e grado minimo $t=2$
+- Si determini il numero massimo e minimo di nodi che può essere contenuto in un B-Tree di altezza h e grado minimo $t=2$
 	- $\log_{2t}\dfrac{n+1}{2t}\leq h\leq \log_{t}\dfrac{n+1}{2}$
 	- numero minimo nodi: $\#NodiMin=1+2\displaystyle\sum^{h-1}_{i=0}t^i$
 	- numero Massimo nodi: $\#NodiMax=\displaystyle\sum^h_{i=0}(2t)^i$
