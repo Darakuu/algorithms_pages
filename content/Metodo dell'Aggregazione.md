@@ -2,6 +2,7 @@
 tags:
   - Algoritmi/PrimaProva
   - Algoritmi/AnalisiAmmortizzata
+  - complete
 draft: false
 ---
 Consiste nello stimare il costo $\mathbf{T}(n)$ di $n$ operazioni e di equidistribuire tale costo tra le $n$ operazioni $\left( \dfrac{\mathbf{T}(n)}{n} \right)$

@@ -8,20 +8,14 @@ Appunti di Algoritmi e Complessità 2023/2024 del corso di laurea magistrale LM-
 
 Non intendono e non vogliono sostituire libri, slide ufficiali e quant'altro. 
 
-
 Questa pagina funge da indice.
-
-_<sub><sup><sub><sup>(esiste solo perché quartz🪴 lo richiede)</sub></sup></sub></sup>_
-
-Currently working on: [[Prima Itinere]]. Al momento c'è il minimo necessario per passare l'esame.  
- 
-Nel caso in cui steste vedendo questo sito ora (19/12/2023->onwards), molte cose sono fatte di fretta perché ci sono le prove in itinere. 
 
 Idealmente, vorrei:
 - Fare io tutti gli esempi e i grafici/immagini;
 - Sistemare alcune dimostrazioni o parti lacunose;
 - Aggiungere risoluzioni di esercizi scritte bene bene in Latex.
 - Infine (ma questo è utopico), aggiungere con citazioni stralci dal Cormen.
+
 ## Prima Parte
 
 - [[Analisi Ammortizzata]]:
@@ -34,10 +28,25 @@ Idealmente, vorrei:
 	- [[Alberi Binomiali]]
 	- [[Mergeable Heaps]]
 	- [[Union-Find]]
-- [[Notazione di Knuth]] -- Non implementata causa tempo
-- [[Funzione di Ackermann]] -- Non implementata causa tempo
+- [[Notazione di Knuth]] 
+- [[Funzione di Ackermann]]
 
-- [[Schema Esercizi Prima Prova]]
+- [[Schema Esercizi Prima Parte]]
 
 ## Seconda Parte
-- TBD
+
+- [[Euristica Move To Front|Move To Front]]
+- [[Minimum Spanning Tree]]
+- [[Cammini Minimi]]
+- [[Reti di Flusso]]
+
+- [[Schema Esercizi Seconda Parte]]
+
+
+Changelog:
+
+| Data | Changes |
+| ---- | ---- |
+| - | - |
+| 2024-01-20 | Aggiunto changelog e indice seconda parte |
+| 2023-12-19 | Ultimo commit per prima prova |
