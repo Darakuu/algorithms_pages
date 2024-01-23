@@ -172,3 +172,19 @@ L'albero è ancora connesso? $\implies$ sì, le 2 componenti connesse da $e$ son
 
 <ins>Dimostrazione</ins> 
 
+- Sia $e=(u,v)$ un arco non ancora colorato,
+- Sia $T$ un MST che verifica l'invariante del colore,
+- Se $e \in T$, cancellando $e$ da $T$ si ottengono due componenti connesse che determinano un taglio $V_{1},V_{2}$
+- $(V_{1},V_{2})$ non è attraversato da alcun arco $\textcolor{royalblue}{blu}$ ed è attraversato da archi non colorati $\implies$ è possibile applicare un passo $\textcolor{royalblue}{blu}$
+- Se $e \notin T$, sia $\pi_{u,v}$ il cammino da $u$ a $v$ in $T$, e si consideri il ciclo semplice $(\pi_{u,v};e)$
+- Tale ciclo non contiene archi $\textcolor{red}{rossi}$ ed inoltre contiene archi non colorati $\implies$ è possibile applicare un passo $\textcolor{red}{rosso}$ a tale ciclo.
+
+
+
+> [!example]- Visualizzazione Lemma, caso Blu
+> 
+> ![[Minimum Spanning Tree-20240123134545911.png|512]]
+
+> [!example]- Visualizzazione Lemma, caso Rosso
+> ![[Minimum Spanning Tree-20240123134545691.png|512]]
+
