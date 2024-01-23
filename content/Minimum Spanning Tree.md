@@ -143,4 +143,32 @@ Due domande che potremmo porci a questo punto sono:
 
 Caso: il passo k+1 colora di $\textcolor{red}{rosso}$ l'arco $e=(u_{1},u_{2})$ relativo al ciclo semplice $(u_{1},u_{2},\dots,u_{r},u_{r+1}=u_{1})$ 
 
-- Se 
+- Se $e \notin T$ non c'è niente da dimostrare. 
+- Supponiamo allora che $e \in T$, perché potrebbe non mantenere l'invariante.
+- $T\backslash\{e\}$ ha due componenti connesse che determinano una partizione $(V_{1},V_{2})$ di $V$.
+- Sia $f$ un arco sul cammino $(u_{2},\dots,u_{r},u_{1})$ che attraversa il taglio $(V_{1},V_{2})$.
+	- Si noti che $f$ non può essere blu perché $f \notin T$.
+	- Inoltre $f$ non può essere rosso perché il ciclo semplice scelto per effettuare il $(r+1)\text{-esimo}$ passo non contiene archi rossi
+	- Pertanto $f$ non è colorato.
+- $w(e)\geq w(f)$
+
+Sia $T''$ tale che $\mathcal{E}[T'']=(\mathcal{E}[T]\backslash\{e\})\cup\{f\}$. $T''$ è uno **spanning tree**. 
+
+$w(T)\leq w(T'')\leq w(T) \implies w(T'')=w(T)$ 
+
+Quindi $T''$ è un MST che verifica l'invariante del colore. 
+
+L'albero è ancora connesso? $\implies$ sì, le 2 componenti connesse da $e$ sono ora connesse da $f$
+
+
+> [!example]- Visualizzazione dimostrazione
+> 
+> ![[Minimum Spanning Tree-20240123132912280.png]]
+
+
+> [!def] Lemma
+> Al termine dell'esecuzione della colorazione, **tutti** gli archi sono stati colorati.
+
+
+<ins>Dimostrazione</ins> 
+
