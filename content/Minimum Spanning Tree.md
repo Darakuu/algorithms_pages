@@ -68,7 +68,7 @@ In un ciclo semplice: 
 I tre algoritmi sono tutti istante di questo processo di colorazione. Dimostrando che la colorazione è corretta, tutte le sue istanze, di conseguenza, lo saranno.
 
 
-> [!example]- Esempio Colorazione
+> [!example]- Esempio Colorazione (hi-DPI, espandi)
 > ![[Minimum Spanning Tree-20240123013937896.png]]
 
 Durante l'esecuzione del processo di colorazione vale la:
@@ -105,16 +105,42 @@ Caso: il passo $k+1$ colora di $\textcolor{royalblue}{blu}$ l'arco $e=(u,v)$ che
 
 - Se $e \in T, T$ verifica l'invariante del colore anche al passo $k+1$.
 - Se $e \notin T$, si consideri il cammino in $T$ da $u$ a $v$.
-	- Sia $(u,v_{1})$ un arco su tale cammino che attraversa il taglio $(V_{1},V_{2})$. Esso è **non colorato**.
+	- Sia $e'=(u_{1},v_{1})$ un arco su tale cammino che attraversa il taglio $(V_{1},V_{2})$. Esso è **non colorato**.
 - Si consideri ora $T'$ tale che:
 	- $\mathcal{E}[T']=(\mathcal{E}[T]\backslash\{(u_{1},v_{1})\})\cup\{(u,v)\}$
-- Poichè $w(u,v)\leq w(u_{1},v_{1})$ si ha $w(T')\leq w(T)\leq w \implies \textbf{w(T')\ =\ w(T)}$
+- Poichè $w(u,v)\leq w(u_{1},v_{1})$ si ha $w(T')\leq w(T)\leq w(T') \implies \textbf{w(T')\ =\ w(T)}$
  
 
 Cioè $T'$ è un MST contenente **tutti** gli archi blu al passo $k+1$. 
+
+In altre parole: 
+
+L'arco $e$, appena colorato di blu al passo $k+1$, nasce da un taglio. Supponiamo di essere nel caso in cui $e$ non appartiene all'MST $T$. 
+
+Considerando un arco $e'=(u_{1},v_{1})$ sul cammino in $T$ da $u$ a $v$. Questo arco:
+- Attraversa il taglio;
+- Non può essere rosso perché non avevamo archi rossi al passo precedente;
+- Non può essere blu perché abbiamo appena colorato di blu l'arco $e$.
+Quindi è non colorato. 
+
+
+A questo punto vale la relazione $w(e)\leq w(e')$ perché T è un MST. 
+
+Ma dato che T è un MST,vllora vale anche $w(T') \leq w(T)$. 
+
+Questo ci fa concludere che $T$ e $T'$ sono uguali, quindi anche $T'$ è un MST.
+
+Due domande che potremmo porci a questo punto sono: 
+- "ma $T'$ è ancora un albero?" $\implies$ Sì, perché la cardinalità degli archi è uguale
+- "Ma dopo che esce $e'$ l'albero è ancora connesso?" $\implies$ Sì, perché un albero è un grafo connesso minimale.
+
+
+> [!example]- Visualizzazione dimostrazione
+> ![[Minimum Spanning Tree-20240123124251171.png]]
+
 
 <ins>Passo k+1</ins> $\textcolor{red}{rosso}$ 
 
 Caso: il passo k+1 colora di $\textcolor{red}{rosso}$ l'arco $e=(u_{1},u_{2})$ relativo al ciclo semplice $(u_{1},u_{2},\dots,u_{r},u_{r+1}=u_{1})$ 
 
-- Se WORKINPROGRESS
+- Se 
