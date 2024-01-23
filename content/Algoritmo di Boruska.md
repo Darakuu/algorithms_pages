@@ -1,7 +1,6 @@
 ---
 tags:
-  - Algoritmi/SecondaProva
   - Algoritmi
   - Algoritmi/MST
-draft: true
+  - Algoritmi/SecondaProva
 ---

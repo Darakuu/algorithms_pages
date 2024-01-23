@@ -47,6 +47,5 @@ Changelog:
 
 | Data | Changes |
 | ---- | ---- |
-| - | - |
 | 2024-01-20 | Aggiunto changelog e indice seconda parte |
 | 2023-12-19 | Ultimo commit per prima prova |
