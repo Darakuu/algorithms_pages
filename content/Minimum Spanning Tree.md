@@ -77,4 +77,44 @@ Durante l'esecuzione del processo di colorazione vale la:
 
 
 > [!def] Definizione
-> Ad ogni passo della procedura di colorazione esiste un MST contente **tutti** gli archi $\textcolor{royalblue}{blu}$ e **nessun** arco $\textcolor{red}{rosso}$
+> Ad ogni passo della procedura di colorazione esiste un MST contenente **tutti** gli archi $\textcolor{royalblue}{blu}$ e **nessun** arco $\textcolor{red}{rosso}$.
+
+
+> [!tldr] Teorema
+> Ogni esecuzione del processo di colorazione colora **tutti** gli archi mantenendo l'invariante del colore.
+
+
+> [!tldr] Corollario con DIM
+> Alla fine della procedura di colorazione, l'insieme degli archi $\textcolor{royalblue}{blu}$ forma un MST 
+>
+> <ins>Dimostrazione</ins>
+>  - Sia $E'$ l'insieme degli archi blu alla fine del processo,
+>  - Sia $T=(V,E'')$ un MST tale che $E'\subseteq E''$ (che esiste grazie all'invariante del colore),
+>  - Poiché $E''$ non contiene alcun arco rosso, si ha anche il viceversa, cioè $E''\subseteq E' \implies E'=E''$
+>  - Quindi $(V,E')$ è un MST $\blacksquare$
+
+Verifichiamo che l'invariante d el colore è mantenuto dopo ogni passo di colorazione, per induzione. 
+
+- Inizialmente l'invariante del colore è banalmente verificato, in quanto non ci sono nè archi blu, nè archi rossi.
+- **Ipotesi Induttiva:** Sia $T=(V,E')$ un MST che contiene **tutti** gli archi blu al passo $k$, e nessun arco rosso
+ 
+
+<ins>Passo k+1</ins> $\textcolor{royalblue}{blu}$  
+
+Caso: il passo $k+1$ colora di $\textcolor{royalblue}{blu}$ l'arco $e=(u,v)$ che attraversa il taglio $(V_{1},V_{2})$ privo di archi blu. 
+
+- Se $e \in T, T$ verifica l'invariante del colore anche al passo $k+1$.
+- Se $e \notin T$, si consideri il cammino in $T$ da $u$ a $v$.
+	- Sia $(u,v_{1})$ un arco su tale cammino che attraversa il taglio $(V_{1},V_{2})$. Esso è **non colorato**.
+- Si consideri ora $T'$ tale che:
+	- $\mathcal{E}[T']=(\mathcal{E}[T]\backslash\{(u_{1},v_{1})\})\cup\{(u,v)\}$
+- Poichè $w(u,v)\leq w(u_{1},v_{1})$ si ha $w(T')\leq w(T)\leq w \implies \textbf{w(T')\ =\ w(T)}$
+ 
+
+Cioè $T'$ è un MST contenente **tutti** gli archi blu al passo $k+1$. 
+
+<ins>Passo k+1</ins> $\textcolor{red}{rosso}$ 
+
+Caso: il passo k+1 colora di $\textcolor{red}{rosso}$ l'arco $e=(u_{1},u_{2})$ relativo al ciclo semplice $(u_{1},u_{2},\dots,u_{r},u_{r+1}=u_{1})$ 
+
+- Se WORKINPROGRESS
