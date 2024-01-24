@@ -215,6 +215,6 @@ Inoltre $w(T_{2}')=w(T_{2})-w(e')+w(e)<w(T_{2})$, cioè che $T_{2}'$ è un altro
 ### Spiegazione più grafica e discorsiva di questa cosa apparentemente brutta brutta:
 
 
-> [!warning] È un .svg, apri in un altra scheda
-
-![[MST-UnicitaMST.svg]]
+> [!warning]- È un .svg, apri in un altra scheda
+>
+>![[MST-UnicitaMST.svg]]
