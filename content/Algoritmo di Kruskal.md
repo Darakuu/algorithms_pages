@@ -30,10 +30,31 @@ Seguendo questo ragionamento senza sbagliare, avremo un MST corretto senza cicli
 La riga 6 dello pseudocodice (l'istruzione *if* ) garantisce che il vertice $u$ e il vertice $v$ sono in subset diversi, garantendo appunto l'assenza di cicli.
 # Correttezza
 
-- Sia $w(e_{1})\leq w(e_{2})\leq\dots \leq w(e_{|E|})$ l'ordinamento per pesi utilizzato;
-- Siano $op(e_{1}),op(e_{2}),\dots,op(e_{|E|})$ le operazione di colorazione effettuate dall'algoritmo di Kruskal.
+- Sia $\large w(e_{1})\leq w(e_{2})\leq\dots \leq w(e_{|E|})$ l'ordinamento per pesi utilizzato;
+- Siano $\large op(e_{1}),op(e_{2}),\dots,op(e_{|E|})$ le operazione di colorazione effettuate dall'algoritmo di Kruskal.
 - Procediamo per induzione su $i=1,\dots,|E|$
+ 
 
+Caso: $op(e_{i})$ colora $e_{i}$ di $\textcolor{royalblue}{BLU}$: 
+
+
+- Sia
+- Si ha
+- Si consideri
+- Esso è attraversato dall'arco $e_{i}$
+- Si osservi che
+- Pertanto $e_{i}$ ha peso minimo
+- Pertanto $e_{i}$ può essere colorato da un passo $\textcolor{royalblue}{BLU}$
+
+Caso: $op(e_{i})$ colora $e_{i}$ di $\textcolor{red}{ROSSO}$: 
+
+
+- Sia $e_{i}$
+- $u_{i}$ e $v_{i}$
+- Sia
+- Si consideri il cammino
+- Tale ciclo non contiene
+- Pertanto
 # Implementazione
 
 Pseudocodice:
@@ -51,3 +72,9 @@ return T;                                    // return the MST
 ```
 
 # Complessità
+
+$\Large O(E\log V)$ 
+
+Infatti si ha:
+- 
+- Union-Find
