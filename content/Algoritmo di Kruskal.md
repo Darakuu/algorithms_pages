@@ -38,23 +38,25 @@ La riga 6 dello pseudocodice (l'istruzione *if* ) garantisce che il vertice $u$ 
 Caso: $op(e_{i})$ colora $e_{i}$ di $\textcolor{royalblue}{BLU}$: 
 
 
-- Sia
-- Si ha
-- Si consideri
+- Sia $e_{i}=(u_{i},v_{i})$
+- Si ha che $u_{i}$ e $v_{i}$ appartengono a **due alberi blu distinti** $S_{i},T_{i}$
+- Si consideri il taglio $(v[S_{i}]\ ,\ V\ \backslash \ v[S_{i}])$
 - Esso è attraversato dall'arco $e_{i}$
-- Si osservi che
-- Pertanto $e_{i}$ ha peso minimo
+- Si osservi che tutti gli archi $e$ tali che $w(e)<w(e_{i})$ sono già colorati.
+- Pertanto $e_{i}$ ha peso minimo tra tutti gli archi non colorati che attraversano il taglio $(v[S_{i}]\ ,\ V\ \backslash \ v[S_{i}])$
 - Pertanto $e_{i}$ può essere colorato da un passo $\textcolor{royalblue}{BLU}$
 
 Caso: $op(e_{i})$ colora $e_{i}$ di $\textcolor{red}{ROSSO}$: 
 
 
-- Sia $e_{i}$
-- $u_{i}$ e $v_{i}$
-- Sia
-- Si consideri il cammino
-- Tale ciclo non contiene
-- Pertanto
+- Sia $e_{i}=(u_{i},v_{i})$
+- $u_{i}$ e $v_{i}$ appartengono ad **uno stesso albero blu** $T$
+- Sia $\pi$ il cammino da $u_{i}$ a $v_{i}$ in $T$
+- Si consideri il ciclo $\pi_{i}e_{i}$
+- Tale ciclo non contiene archi rossi ed inoltre $e$ è l'unico arco non colorato
+- Pertanto $e$ può essere colorato da un passo $\textcolor{red}{ROSSO}\qquad \blacksquare$
+
+
 # Implementazione
 
 Pseudocodice:
@@ -76,5 +78,12 @@ return T;                                    // return the MST
 $\Large O(E\log V)$ 
 
 Infatti si ha:
-- 
-- Union-Find
+- $O(E\log V)$: ordinamento degli archi
+- Union-Find: 
+	- $|V|\quad$        MAKE_SET
+	- $2|E|\quad$      FIND_SET
+	- $|V|-1\quad$ UNION
+	- $\underline{ \_ }_{ }\underline{ \_ }_{ }\underline{ \_ }_{ }\underline{ \_ }_{ }\underline{ \_ }_{ }\underline{ \_ }_{ }\underline{ \_ }_{ }\underline{ \_ }_{ }\underline{ \_ }_{ }\underline{ \_ }_{ }$
+	- $2(|V|+|E|)-1=O(E)$ operazioni, di cui $|V|$ MAKE_SET
+	- $\implies (2(|V|+|E|)-1)\propto(V)=O(E\log V) = O(E\log V)$
+
