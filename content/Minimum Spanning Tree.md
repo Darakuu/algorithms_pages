@@ -188,3 +188,33 @@ L'albero è ancora connesso? $\implies$ sì, le 2 componenti connesse da $e$ son
 > [!example]- Visualizzazione Lemma, caso Rosso
 > ![[Minimum Spanning Tree-20240123134545691.png|512]]
 
+## Unicità MST
+
+
+> [!def] Proprietà
+> Sia $G=(V,E)$ un grafo non orientato e connesso con funzione peso $w:E\to \mathbb{R}$ **iniettiva** $\implies$ $G$ ha un **unico** MST.
+
+**Reminder**: $\Delta=\text{Differenza Simmetrica tra due insiemi} = (B-A) \cup (A-B)$
+
+<ins>Dimostrazione</ins>
+
+Siano $T_{1}\neq T_{2}$ due MST di $G$. 
+
+Sia $e=(u,v) \in \mathcal{E}[T_{1}]\ \Delta\  \mathcal{E}[T_{2}]$ di peso minimo. 
+
+Supponiamo che $e \in \mathcal{E}[T_{1}]\backslash\mathcal{E}[T_{2}]$, sia $\pi$ un cammino da $u$ a $v$ in $T_{2}$, ovviamente $\pi \cancel{ \subseteq }T_{1}$ 
+
+Sia $e'=(u',v') \in (\mathcal{E}[T_{2}]\backslash\mathcal{E}[T_{1}])\cap \pi \subseteq \mathcal{E}[T_{1}]\ \Delta\  \mathcal{E}[T_{2}]$. 
+
+Pertanto $w(e')>w(e)$. 
+
+Sia ora $T_{2}'=T_{2}\ \backslash\ {e'}\cup e$, si ha che $T_{2}'$ è un albero. 
+
+Inoltre $w(T_{2}')=w(T_{2})-w(e')+w(e)<w(T_{2})$, cioè che $T_{2}'$ è un altro MST con peso minore a $T_{2}$, che è **assurdo**. $\quad \blacksquare$
+
+### Spiegazione più grafica e discorsiva di questa cosa apparentemente brutta brutta:
+
+
+> [!warning] È un .svg, apri in un altra scheda
+
+![[MST-UnicitaMST.svg]]
