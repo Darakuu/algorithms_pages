@@ -76,4 +76,55 @@ Nota, l'esercizio è leggermente modificato rispetto alla prova d'esame. In part
 
 # Complessità
 
-## Confronto tra E logV ed E + V logV
+- Inizializzazione: $O(V)$
+- Costruzione:
+	- $|V|$ Extract-Min,
+	- $|E|$ Decrease_Key.
+
+| \ | Heap Binario | Heap Binomiale | Heap di Fibonacci |
+| :--: | :--: | :--: | :--: |
+| Inizializzazione | $O(V)$ | $O(V)$ | $O(V)$ |
+| $\mid V\mid$ Extract_Min | $O(V\log V)$ | $O(V\log V)$ | $O(V\log V)$ |
+| $\mid E \mid$ Decrease_Key | $O(E\log V)$ | $O(E\log V)$ | $O(E)$ |
+| \ | $O(E\log V)$ | $O(E\log V)$ | $O(E+V\log V)$ |
+
+Notiamo come l'Heap di Fibonacci non è mai peggiore di altri Heap. 
+
+Questo perché ci troviamo nel caso $|V| \geq 2$.
+
+## Confronto tra E logV <-> E + V logV
+
+
+- $\dfrac{E+V\log V}{E\log V}=\dfrac{E}{E\log V}+\dfrac{V\log V}{E\log V}=\dfrac{1}{\log V}+\dfrac{V}{E}\leq 3\qquad (\text{per }|V|\geq 2)$
+
+Quindi $E+V\log V=O(E\log V)$
+
+Abbiamo che:
+- $|E|\geq|V|-1$
+- $\dfrac{|V|}{|E|}\leq\dfrac{|V|}{|V|-1}$
+
+Per $|V|\geq 2$ si ha $\log|V|\geq 1 \implies \dfrac{1}{\log V}\leq 1$. 
+
+
+Inoltre $\dfrac{|V|}{|E|}\leq\dfrac{|V|}{|V|-1}\leq 2$, e poiché $f(n)=\dfrac{n}{n-1}$ è una funzione decrescente, avremo:
+
+- $\dfrac{|V|}{|V|-1}\leq \dfrac{2}{2-1}=2$
+
+Pertanto $\dfrac{1}{\log|V|}+\dfrac{|V|}{|E|}\leq 3$, per $|V|\geq 2$
+
+#### Inoltre:
+
+$E+V\log V=o(E\log V) \iff$ Il grafo ha una certa densità, cioè non è definibile molto sparso.
+
+Dimostrazione:
+
+$$
+\begin{align}
+o(E\log V) & \iff \lim_{ V \to \infty }{\dfrac{E+V\log V}{E\log V}}=0 \\
+& \iff \lim_{ V \to \infty }{\dfrac{1}{\log V}+\dfrac{V}{E}}=0 \\
+& \iff \lim_{ V \to \infty } {\dfrac{V}{E}}=0  \\
+& \iff V=o(E) \\
+& \iff E=\omega(V) \\
+&& \blacksquare
+\end{align}
+$$
