@@ -218,3 +218,11 @@ Inoltre $w(T_{2}')=w(T_{2})-w(e')+w(e)<w(T_{2})$, cioè che $T_{2}'$ è un altro
 > [!warning]- È un .svg, apri in un altra scheda
 >
 >![[MST-UnicitaMST.svg]]
+
+## MST: Argomenti affini
+
+Separati per mantenere ordine
+
+- [[MST-Segnatura]];
+- [[MST-Reduce]];
+- [[MST-Clustering]].
