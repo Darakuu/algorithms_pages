@@ -1,5 +1,5 @@
 ---
 tags:
   - Algoritmi/SecondaProva
-draft: true
+draft: false
 ---

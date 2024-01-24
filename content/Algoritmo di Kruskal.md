@@ -3,7 +3,7 @@ tags:
   - Algoritmi/SecondaProva
   - Algoritmi
   - Algoritmi/MST
-draft: true
+draft: false
 ---
 # Strategia
 

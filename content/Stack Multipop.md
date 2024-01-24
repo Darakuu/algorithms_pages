@@ -1,7 +1,7 @@
 ---
 tags:
   - Algoritmi/AnalisiAmmortizzata
-todo:
+todo: false
 ---
 # Stack con Multipop
 

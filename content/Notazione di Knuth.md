@@ -1,6 +1,6 @@
 ---
 tags:
   - Algoritmi/PrimaProva
-draft: true
+draft: false
 ---
 # Notazione $\uparrow$ di Knuth
