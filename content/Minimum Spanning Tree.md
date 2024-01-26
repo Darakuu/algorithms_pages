@@ -223,6 +223,6 @@ Inoltre $w(T_{2}')=w(T_{2})-w(e')+w(e)<w(T_{2})$, cioè che $T_{2}'$ è un altro
 
 Separati per mantenere ordine
 
-- [[MST-Segnatura]];
+- [[MST-Segnatura]], che contiene una dimostrazione alternativa dell'unicità dell'MST;
 - [[MST-Reduce]];
 - [[MST-Clustering]].
