@@ -37,8 +37,15 @@ Idealmente, vorrei:
 
 - [[Euristica Move To Front|Move To Front]]
 - [[Minimum Spanning Tree]]
+	- [[MST-Segnatura]]
+	- [[MST-Reduce]]
+	- [[MST-Clustering]]
 - [[Cammini Minimi]]
+	- [[Algoritmi per calcolo distanza e dei cammini minimi da una data sorgente]]
+	- [[Cammini minimi tra tutte le coppie di nodi]]
+	- [[Superare la complexity barrier]]
 - [[Reti di Flusso]]
+	- [[Edge Connectivity]]
 
 - [[Schema Esercizi Seconda Parte]]
 
@@ -47,6 +54,7 @@ Changelog:
 
 | Data | Changes |
 | ---- | ---- |
+| 2024-01-27 | Major refactoring del sito |
 | 2024-01-27 | Continua lavoro su shortest path, introduce reti di flusso |
 | 2024-01-26 | Inizio lavoro su shortest path |
 | 2024-01-25 | Aggiunge Segnatura, Reduce, Clustering (in wip) |

@@ -17,7 +17,7 @@ e anche (ma non sempre):
 - Delete(H,x)
 
 Esistono due implementazioni:
-- [[Algoritmi/Heap Binomiali|Heap Binomiali]]
+- [[Heap Binomiali|Heap Binomiali]]
 - [[Heap di Fibonacci]]
 
 Si basano sugli [[Alberi Binomiali]].
