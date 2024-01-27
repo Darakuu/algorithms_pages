@@ -65,9 +65,71 @@ Sia $G=(V,E)$ un grafo non orientato con un funzione peso $w:E\to \mathbb{R}$.
 
 Sia  $\sigma$ la segnatura degli MST di un grafo con funzione peso iniettiva. 
 
-Dall'iniettività di $w$ segue immediatamente che G ha un unico MST, cioè quello di segnatura $\sigma \qquad \blacksquare$
+Dall'iniettività di $w$ segue immediatamente che G ha un unico MST, cioè quello di segnatura $\sigma$
+
+$\qquad\blacksquare$
 
 facile eh?
 
 ## Minimalità della Segnatura
 
+- Siano $\sigma=(s_{1},\dots,s_{k})\quad,\quad \sigma'=(s_{1}{i}',\dots,s_k)$ due $k-uple$ di numeri reali, con $\sigma<\sigma'$ lessicograficamente.
+- Cioè se e solo se: $s_{1}=s_{1}',s_{2}=s_{2}',\dots,s_{l-1}=s_{l-1}',s_{l}<s_{l}'$ per qualche $1\leq l \leq  k$.
+- Esempio: $(1,2,2,20,70)$ precede $(1,2,3,10,15)$
+
+### Proprietà A
+
+La relazione di precedenza lessicografica $<$ tra $k-uple$ è **transitiva**.
+
+### Proprietà B
+
+Sia $(G,w)$ un grafo non orientato pesato, con $G=(V,E)$ e sia $w:E\to \mathbb{R}$ una qualunque funzione peso tale che:
+- $w'(e)\leq w(e), \ \forall\  e \in E$
+- $w'(f)<w(f),$ per qualche $f \in E$
+
+Allora la segnatura di $(G,w')$ precede la segnatura di $(G,w)$.
+
+### Teorema Minimalità
+
+
+> [!tldr] Teorema
+> Uno spanning tree è un MST **se e solo se** la sua segnatura è ==lessicograficamente minima==
+
+#### <ins>Dimostrazione</ins> $(\implies)$
+
+Procediamo per assurdo, supponendo che esista un grafo pesato $(G,w)$ non orientato e connesso, con $G=(V,E)$, i cui MST hanno una segnatura $\sigma$ non minima. 
+
+Siano $\mathcal{T},\mathcal{T}'$, con $\mathcal{T}=(V,T),\mathcal{T}'=(V,T')$ una coppia di spanning tree tali che:
+- $\mathcal{T}:MST$
+- $\sigma'=\displaystyle\sum_{W}(\mathcal{T}')<\displaystyle\sum_{W}(T)=\sigma$
+- $d(\mathcal{T},\mathcal{T}') \text{ sia minima}$
+
+Inoltre: sia $e \in T\Delta T'$ di peso minimo, con $e=(u,v)$. 
+
+Abbiamo due casi:
+
+- Caso $e \in T\ \backslash\  T'$
+
+	- Sia $(V_{1},V_{2})$ il taglio di G indotto cancellando l'arco $e$ dall'MST $\mathcal{T}$. 
+	- Sia $\pi$ un cammino in $\mathcal{T'}$ da $u$ a $v$ e sia $e'$ un arco in $\pi$ che attraversa il taglio $(V_{1},V_{2})\implies e' \in T'\backslash T$
+	- Pertanto $w(e)\leq w(e')$
+	- Poiché $T'\backslash\{ e' \}\bigcup \{ e \}$ è uno spanning tree, si ha:
+		- $\displaystyle\sum_{W}\left( T'\backslash\{ e' \}\bigcup \{ e \} \right)\leq \displaystyle\sum_{W}(T')<\displaystyle\sum_{W}(T)$
+	- Ma in tal caso avremmo $d(T'\backslash\{ e' \}\bigcup \{ e \},T)<d(T',T)$, che contraddice la minimalità di $d(T',T)$
+
+- Caso $e \in T'\ \backslash\ T$
+
+	- Sia $(V_{1},V_{2})$ il taglio di G indotto cancellando l'arco $e$ dall'MST $\mathcal{T'}$. 
+	- Sia $\pi$ un cammino in $\mathcal{T}$ da $u$ a $v$ e sia $e'$ un arco in $\pi$ che attraversa il taglio $(V_{1},V_{2})\implies e' \in T\backslash T'$
+	- Caso analogo al prima, $T\backslash\{ e' \}\bigcup \{ e \}$ è uno spanning tree di G.
+	- Poiché $w(e)\leq w(e')$, si ha che:
+		- $w(T)\leq w(T\backslash\{ e' \}\bigcup \{ e \})\leq w(T) \implies w(e)=w(e')\implies T\backslash\{ e' \}\bigcup \{ e \} \text{ è un MST}$
+	- Si ha dunque $\displaystyle\sum_{w}(T')<\displaystyle\sum_{w}(T)=\displaystyle\sum_{w}(T\backslash\{ e' \}\bigcup \{ e \})$
+	- Inoltre, per la stessa relazione sulla distanza, la coppia $d(T',T\backslash\{ e' \}\bigcup \{ e \})$ contraddice la minimalità di $d(T',T)$
+
+
+#### <ins>Dimostrazione</ins> $(\impliedby)$
+
+Sia $\mathcal{T}$ uno spanning tree di $G$ con segnatura **minima**, e sia $\mathcal{T}'$ un MST di G. 
+
+Per la prima parte del teorema, la segnatura di $\mathcal{T}'$ è minima, dunque $\displaystyle\sum_{w}(\mathcal{T})=\displaystyle\sum_{w}(\mathcal{T}')\implies w(\mathcal{T})=w(\mathcal{T}')$, pertanto anche $\mathcal{T}$ è un MST.
