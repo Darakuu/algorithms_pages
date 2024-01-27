@@ -47,8 +47,9 @@ Changelog:
 
 | Data | Changes |
 | ---- | ---- |
-| 2024-01-26 | --- |
-| 2024-01-25 | Aggiunge Segnatura, Reduce, Clustering |
+| 2024-01-27 | Continua lavoro su shortest path, introduce reti di flusso |
+| 2024-01-26 | Inizio lavoro su shortest path |
+| 2024-01-25 | Aggiunge Segnatura, Reduce, Clustering (in wip) |
 | 2024-01-24 | Aggiunto Prim con Esercizio |
 | 2024-01-23 | Aggiunta pagina MST, Boruska, Kruskal |
 | 2024-01-20 | Aggiunto changelog e indice seconda parte |
