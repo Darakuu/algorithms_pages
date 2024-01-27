@@ -115,7 +115,10 @@ $c_{i}=\color{cyan}\text{\#Set}_{i}+\text{\#Reset}_{i}$ 
 
 $\Delta \phi_{i}=\color{orange}\text{\#Set}_{i}-\text{\#Reset}_{i}$
 
->[!note] Nota Bene: $0\leq \text{\#Set}_{i}\leq 1$ 
+>[!note] Nota Bene:  
+
+$0\leq \text{\#Set}_{i}\leq 1$ 
+
 
 Pertanto: 
 $\hat{c}_{i}=\color{cyan}c_{i}\color{white}+\color{orange}\Delta \phi_{i}\color{white}=(\color{cyan}\text{\#Set}_{i}+\cancel{ \text{\#Reset}_{i} }\color{white})+(\color{orange}\text{\#Set}_{i}-\cancel{ \text{\#Reset}_{i} }\color{white})=2\times \text{\#Set}_{i}\leq 2$

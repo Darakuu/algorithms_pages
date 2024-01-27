@@ -122,12 +122,15 @@ Questa è una manifestazione della Proprietà di Confluenza: i crediti non dipen
 
 Se lo stack non è vuoto, purché non sia enorme, le sue operazioni rimangono lineari.
 
-$$\begin{align}
+$$
+\begin{align}
+
 \displaystyle\sum^n_{i=1}c_{i} &= \sum^n_{i=1}-\phi(D_{n})+\phi(D_{o}) \\
 & \leq 2\times\#\text{Push} - |S_{n}|+|S_{0}| \\
 & \leq 2\times n\qquad\ \ -|S_{n}|+|S_{0}| \\
 & \leq 2 \times n \qquad\qquad\quad\ \ +|S_{0}| \\ 
-\end{align}$$
+\end{align}
+$$
 
 Se $|S_{0}|=O(n) \implies \displaystyle\sum^n_{i=1}c_{i}=O(n)$
 
