@@ -13,3 +13,28 @@
     --bg: #c1efc120;
   }
 }
+
+article {
+  :is(h1) {
+      color: #4ca6e6;  
+  }
+  :is(h2) {
+      color: #34daa5;  
+  }
+
+  :is(h3) {
+      color: #36e2e2;  
+  }
+
+  :is(h4) {
+      color: #e3e363;  
+  }
+
+  :is(h5) {
+      color: #e96363;  
+  }
+
+  :is(h6) {
+      color: #e06cc7;  
+  }
+}
