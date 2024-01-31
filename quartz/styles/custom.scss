@@ -14,6 +14,13 @@
   }
 }
 
+.article-title {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #3aaa74;  
+  font-size: xx-large;
+}
+
 article {
   :is(h1) {
       color: #4ca6e6;  
