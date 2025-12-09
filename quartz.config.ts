@@ -9,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "📚 Algoritmi",
-    pageTitleSuffix: "Appunti di Algoritmi e Complessità",
+    pageTitleSuffix: " - Appunti di Algoritmi e Complessità",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
