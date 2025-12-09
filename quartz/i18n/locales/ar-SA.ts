@@ -5,6 +5,7 @@ export default {
     title: "غير معنون",
     description: "لم يتم تقديم أي وصف",
   },
+  direction: "rtl" as const,
   components: {
     callout: {
       note: "ملاحظة",
@@ -31,6 +32,9 @@ export default {
     },
     explorer: {
       title: "المستعرض",
+    },
+    readerMode: {
+      title: "وضع القارئ",
     },
     footer: {
       createdWith: "أُنشئ باستخدام",
@@ -70,6 +74,7 @@ export default {
     error: {
       title: "غير موجود",
       notFound: "إما أن هذه الصفحة خاصة أو غير موجودة.",
+      home: "العوده للصفحة الرئيسية",
     },
     folderContent: {
       folder: "مجلد",
